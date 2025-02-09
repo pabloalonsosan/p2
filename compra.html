@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Pabloas Motorcycles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 🔷 Sección de Fondo con Título -->
+    <header class="hero-compra">
+        <div class="content">
+            <h1>COMPRA TU MOTO</h1>
+            <p>Completa el formulario y hazte con la moto de tus sueños.</p>
+        </div>
+    </header>
+
+    <!-- 🔻 Sección del Formulario -->
+    <section class="formulario">
+        <h2>Formulario de Compra</h2>
+        <form action="#" method="POST">
+
+            <!-- Datos Personales -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <!-- Selección de Tipo de Moto -->
+            <label for="tipo-moto">Tipo de Moto:</label>
+            <select id="tipo-moto" name="tipo-moto">
+                <option value="trial">Trial</option>
+                <option value="enduro">Enduro</option>
+            </select>
+
+            <!-- Selección de Modelo -->
+            <label for="modelo">Modelo de Moto:</label>
+            <select id="modelo" name="modelo">
+                <option value="modelo1">Modelo 1</option>
+                <option value="modelo2">Modelo 2</option>
+                <option value="modelo3">Modelo 3</option>
+                <option value="modelo4">Modelo 4</option>
+                <option value="modelo5">Modelo 5</option>
+            </select>
+
+            <!-- Garantía -->
+            <label for="garantia">Garantía:</label>
+            <select id="garantia" name="garantia">
+                <option value="1 año">1 Año</option>
+                <option value="2 años">2 Años</option>
+                <option value="3 años">3 Años</option>
+            </select>
+
+            <!-- Selección de Extras -->
+            <fieldset>
+                <legend>Extras:</legend>
+                <input type="checkbox" id="extra1" name="extras" value="Protección avanzada">
+                <label for="extra1">Protección avanzada</label><br>
+
+                <input type="checkbox" id="extra2" name="extras" value="Escape deportivo">
+                <label for="extra2">Escape deportivo</label><br>
+
+                <input type="checkbox" id="extra3" name="extras" value="Suspensión reforzada">
+                <label for="extra3">Suspensión reforzada</label>
+            </fieldset>
+
+            <!-- Fecha de Recogida -->
+            <label for="fecha">Fecha Aproximada de Recogida:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <!-- País de Recogida -->
+            <label for="pais">País de Recogida:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <!-- Botones -->
+            <div class="botones">
+                <button type="submit" class="btn">Enviar</button>
+                <a href="#top" class="btn btn-secundario">Volver Arriba</a>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
